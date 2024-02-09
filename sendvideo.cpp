@@ -81,7 +81,7 @@ int main() {
     std::vector<std::string>::iterator it = passwdLines.begin();
     while (std::getline(inputFile, stream)) {
         std::string command = "ffmpeg -hide_banner -re -fflags +genpts -stream_loop -1 -i " +
-                              stream + " -c copy -vsync 1 -tune zerolatency -f flv " +
+                              stream + " -c copy -vsync 1 -tune zerolatency -pix_fmt yuv420p -f flv " +
                               "rtmp://212.119.243.135/" + *it +
                               " -indexmem 512 -rtbufsize 64K -probesize 512 -analyzeduration 0 " +
                               "-thread_queue_size 2048 -avoid_negative_ts \"make_zero\"";
@@ -91,9 +91,9 @@ int main() {
         //std::cout << command << std::endl;
 		//system(command.c_str());
  #if defined(_WIN32)
-        system(("start cmd.exe @cmd /k" + command).c_str());
+        system(("start cmd.exe @cmd /k " + command).c_str());
  #else
-		system(("screen -d -m -S jabber" + command).c_str());
+		system(("screen -d -m -S jabber " + command).c_str());
  #endif
     }
 
