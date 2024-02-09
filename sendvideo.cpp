@@ -89,7 +89,12 @@ int main() {
 
         // Execute the ffmpeg command
         //std::cout << command << std::endl;
-		system(command.c_str());
+		//system(command.c_str());
+ #if defined(_WIN32)
+        system(("start cmd.exe @cmd /k" + command).c_str());
+ #else
+		system(("screen -d -m -S jabber" + command).c_str());
+ #endif
     }
 
     inputFile.close();
