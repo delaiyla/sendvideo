@@ -2,7 +2,9 @@
 
 
 Видеосервер для Linux: https://github.com/bluenviron/mediamtx/releases/download/v1.5.1/mediamtx_v1.5.1_linux_amd64.tar.gz
+
 Видеосервер для Win: https://github.com/bluenviron/mediamtx/releases/download/v1.3.1/mediamtx_v1.3.1_windows_amd64.zip
+
 Исходный код видеосервера: https://github.com/bluenviron/mediamtx/archive/refs/tags/v1.5.1.tar.gz
 
 
