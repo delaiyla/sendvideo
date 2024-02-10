@@ -1,4 +1,4 @@
-Программа для публикации видеопотока на видеосервер
+Программа для публикации видеопотока на видеосервер sendvideo.cpp
 
 
 Видеосервер для Linux: https://github.com/bluenviron/mediamtx/releases/download/v1.5.1/mediamtx_v1.5.1_linux_amd64.tar.gz
