@@ -72,7 +72,7 @@ g++ -std=c++11 -o sendvideo sendvideo.cpp
 
 Win:
 
-g++ -std=c++11
+g++ -std=c++11 -o sendvideo.exe sendvideo.cpp
 
 
 
