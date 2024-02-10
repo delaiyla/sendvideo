@@ -81,7 +81,7 @@ int main() {
     std::vector<std::string>::iterator it = passwdLines.begin();
     std::vector<std::string>::iterator ip = serverLines.begin();
     while (std::getline(inputFile, stream)) {
-        std::string command = "ffmpeg -hide_banner -re -fflags +genpts -stream_loop -1 -i " +
+        std::string command = "ffmpeg -hide_banner -re -fflags +genpts -stream_loop 1 -i " +
                               stream + " -c copy -vsync 1 -tune zerolatency -pix_fmt yuv420p -f " + *ip + *it +
                               " -indexmem 512 -rtbufsize 256K -probesize 512 -analyzeduration 0 " +
                               "-thread_queue_size 2048 -avoid_negative_ts \"make_zero\"";
