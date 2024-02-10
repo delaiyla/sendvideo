@@ -1,1 +1,1 @@
-flv rtmp://212.119.243.135/
+flv rtmp://localhost/
