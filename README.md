@@ -28,6 +28,8 @@ rtsp rtsp://логин:пароль@212.119.243.135/
 
 ffplay rtmp://212.119.243.135/sleep
 
+Или воспользоваться программой для воспроизведения нескольких видео одновременно: https://github.com/delaiyla/playvideo
+
 Для работы программы потребуется ffmpeg, скачать можно отсюда: https://ffmpeg.org/ Инструкция по установке ffmpeg: https://www.youtube.com/watch?v=2eSRuadzJxA
 
 Компилятор можно скачать отсюда: https://jmeubank.github.io/tdm-gcc/download/ или отсюда: https://www.embarcadero.com/free-tools/dev-cpp
