@@ -1,4 +1,5 @@
 #include <cstdlib>
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -85,6 +86,7 @@ int main() {
                               " -indexmem 512 -rtbufsize 256K -probesize 512 -analyzeduration 0 " +
                               "-thread_queue_size 2048 -avoid_negative_ts \"make_zero\"";
         if(it != passwdLines.end()) ++it;
+        if(ip != passwdLines.end()) ++ip;
 
         // Execute the ffmpeg command
         //std::cout << command << std::endl;
