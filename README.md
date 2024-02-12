@@ -1,5 +1,8 @@
 Программа для публикации видеопотока на видеосервер (sendvideo.cpp)
 
+Обсудить можно в теме:
+https://sys.hardprivate.com/viewtopic.php?f=2&t=507
+
 
 Видеосервер для Linux: https://github.com/bluenviron/mediamtx/releases/download/v1.5.1/mediamtx_v1.5.1_linux_amd64.tar.gz
 
